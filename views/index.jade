@@ -1,5 +1,11 @@
-extends layout
+<html ng-app>
+head
+	script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js")
 
-block content
-  h1= title
-  p Welcome to #{title}
+body
+	div
+		label Name:
+		input(type="text",ng-model="yourName",placeholder="Enter a name here")
+		hr
+		h1 Hello {{yourName}}!
+</html>
